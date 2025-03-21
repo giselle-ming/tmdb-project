@@ -1,0 +1,98 @@
+.banner {
+    object-fit: contain;
+    height: 60vh;
+
+    @media screen and (min-width: 1600px) {
+        height: 930px;
+    }
+}
+
+.banner-contents {
+    padding-left: 2rem;
+    padding-top: 16rem;
+
+   @media screen and (min-width: 1600px) {
+        padding-top: 542px;
+    }
+
+    @media screen and (width > 650px) and (width <= 1000px) {
+        padding-top: 262px;
+        margin-left: 10px;
+    }
+
+    @media screen and (max-width: 650px) {
+       margin-left: 10px;
+       padding-top: 277px;
+    }
+}
+
+.banner-title {
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: 2rem;
+    text-shadow: 1px 1px 5px black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    @media screen and (width > 650px) and (width <= 1000px) {
+        font-size: 2.1rem;
+    }
+
+    @media screen and (max-width: 650px) {
+        font-size: 1.5rem;
+    }
+}
+
+.banner-description {
+    line-height: 1.5rem;
+    padding-top: 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 30rem;
+    height: 10rem;
+
+    @media screen and (max-width: 645px) {
+        padding-right: 10px;
+        max-width: 290px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
+
+.banner-btns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner-btn {
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: whitesmoke;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 400;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 1rem;
+    background-color: rgba(0, 0, 0, 0.78);
+    padding-bottom: 1rem;
+    border-radius: 0.5rem;
+    &:hover
+{
+        background: #1c1a53e3;
+    }
+    &:disabled {
+        background: transparent;
+        background-color: $btn-disabled-backgroundcolor;
+    }
+}
+
+.banner-fadeBottom {
+    height: 600px;
+    margin-top: -500px;
+    background-image: linear-gradient(180deg, transparent, rgba(85, 80, 80, 0.742), $main-app-color);  
+}
